@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-sm bg-light justify-content-between">
+  <div class="container">
+  <span class="navbar-brand mb-0 h1">{{ title }}</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  {% if title != 'Статьи' %}
+  <a href="../../index.html" class="btn btn-outline-dark">Все статьи</a>
+  {% endif %}
+    </div>
+</nav>
