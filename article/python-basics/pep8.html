@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Pep8</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<div class="content">
+<nav class="navbar navbar-expand-sm bg-light justify-content-between">
+  <div class="container">
+  <span class="navbar-brand mb-0 h1">Pep8</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <a href="../../index.html" class="btn btn-outline-dark">Все статьи</a>
+  
+    </div>
+</nav>
+<div class="container article">
+  <div class="col-lg-8 offset-lg-2 my-5">
+    <p>PEP8 – это стайлгайд написания кода на Питоне. Он является <em>частью</em> Питона. Его все соблюдают.</p>
+<p>Он отвечает на вопросы в таком духе,</p>
+<ul>
+<li>Табы или пробелы?</li>
+<li>Какая максимальная длина строки?</li>
+<li>Одинарные или двойные кавычки?</li>
+<li>Где ставить пробелы, а где - нет?</li>
+<li>Сколько ставить пустых строк?</li>
+<li>Как импортировать?</li>
+<li>Какой стиль именования сущностей?</li>
+</ul>
+<p>Лучше прочитать 
+<a href="https://www.python.org/dev/peps/pep-0008/">оригинал документа PEP8</a> (если не осилишь – вот
+<a href="http://defpython.ru/pep8">куцый перевод на русский</a>). Особое внимание – 
+к секции "A Foolish Consistency is the Hobgoblin of Little Minds".</p>
+<p>PEP 8 – закон. Его надо соблюдать. Если в вашей программе много нарушений PEP 8 – она выглядит неряшливо,
+по-дилетантски.</p>
+<p>Помимо PEP 8 есть ещё <code>pep8</code>. <code>pep8</code> – это модуль, позволяющий проверять, соответствует ли код стандарту PEP 8.
+Сперва её надо установить (<code>pip install pep8</code>), поле этого запустить, указав путь до файла или папки с кодом:
+<code>pep8 ./2_wallie_how_are_you/wallie.py</code>. Программа выдаст все нарушения PEP 8. Остаётся их только поправить.</p>
+  </div>
+</div>
+<footer class="text-center lead bg-light mt-auto">
+  © 2018 Сделано в обучающих целях. Для проекта
+  <a href="https://devman.org">Devman</a>
+</footer>
+</div>
+</body>
+</html>
