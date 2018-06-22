@@ -1,14 +1,17 @@
+{% extends "basic.html" %}
+{% block body %}
 <div class="container">
   <div class="col-lg-8 col-sm-11 col-10 offset-lg-2 offset-sm-1 offset-2 my-5">
     {% for topic, articles in topics.items() %}
     <p class="h4 text_weight-bold">{{ topic }}</p>
     <ul class="list-inline pl-5 mb-5 col-12">
-      {% for article in articles %}
+      {% for article in articles -%}
         <li class="list-inline-item col-lg-4 col-sm-5 mb-sm-2">
           <a class="border-bottom" href="{{ article['url'] }}">{{ article['name'] }}</a>
         </li>
-      {% endfor %}
+      {%- endfor %}
     </ul>
     {% endfor %}
   </div>
 </div>
+{% endblock %}
